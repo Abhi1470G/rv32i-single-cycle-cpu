@@ -1,0 +1,15 @@
+
+C:\Users\abhi1\OneDrive\Desktop\Coding\Verilog on vivado\risc-v\build\jump.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <FUNC-0x10>:
+   0:	01000093          	li	ra,16
+   4:	00c002ef          	jal	t0,10 <FUNC>
+   8:	06300113          	li	sp,99
+   c:	00000073          	ecall
+
+00000010 <FUNC>:
+  10:	07b00193          	li	gp,123
+  14:	00028067          	jr	t0

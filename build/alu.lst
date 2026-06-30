@@ -1,0 +1,20 @@
+
+C:\Users\abhi1\OneDrive\Desktop\Coding\Verilog on vivado\risc-v\build\alu.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <__BSS_END__-0x1034>:
+   0:	01900093          	li	ra,25
+   4:	00a00113          	li	sp,10
+   8:	002081b3          	add	gp,ra,sp
+   c:	40208233          	sub	tp,ra,sp
+  10:	0020f2b3          	and	t0,ra,sp
+  14:	0020e333          	or	t1,ra,sp
+  18:	0020c3b3          	xor	t2,ra,sp
+  1c:	00011433          	sll	s0,sp,zero
+  20:	00211413          	slli	s0,sp,0x2
+  24:	00145493          	srli	s1,s0,0x1
+  28:	40245513          	srai	a0,s0,0x2
+  2c:	001125b3          	slt	a1,sp,ra
+  30:	00000073          	ecall

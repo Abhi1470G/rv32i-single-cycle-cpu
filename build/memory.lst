@@ -1,0 +1,16 @@
+
+C:\Users\abhi1\OneDrive\Desktop\Coding\Verilog on vivado\risc-v\build\memory.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <__BSS_END__-0x1024>:
+   0:	06400093          	li	ra,100
+   4:	0c800113          	li	sp,200
+   8:	00000193          	li	gp,0
+   c:	0011a023          	sw	ra,0(gp) # 1824 <__global_pointer$>
+  10:	0021a223          	sw	sp,4(gp) # 1828 <__global_pointer$+0x4>
+  14:	0001a203          	lw	tp,0(gp) # 1824 <__global_pointer$>
+  18:	0041a283          	lw	t0,4(gp) # 1828 <__global_pointer$+0x4>
+  1c:	00520333          	add	t1,tp,t0
+  20:	00000073          	ecall

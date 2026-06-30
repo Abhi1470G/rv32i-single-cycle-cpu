@@ -1,0 +1,29 @@
+
+C:\Users\abhi1\OneDrive\Desktop\Coding\Verilog on vivado\risc-v\build\branch.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <LABEL-0x18>:
+   0:	00a00093          	li	ra,10
+   4:	01400113          	li	sp,20
+   8:	02208463          	beq	ra,sp,30 <FAIL>
+   c:	00100193          	li	gp,1
+  10:	00209463          	bne	ra,sp,18 <LABEL>
+  14:	06300193          	li	gp,99
+
+00000018 <LABEL>:
+  18:	0020c463          	blt	ra,sp,20 <LESS>
+  1c:	06300213          	li	tp,99
+
+00000020 <LESS>:
+  20:	00115463          	bge	sp,ra,28 <GREATER>
+  24:	06300293          	li	t0,99
+
+00000028 <GREATER>:
+  28:	07b00313          	li	t1,123
+  2c:	00000073          	ecall
+
+00000030 <FAIL>:
+  30:	06f00393          	li	t2,111
+  34:	00000073          	ecall
